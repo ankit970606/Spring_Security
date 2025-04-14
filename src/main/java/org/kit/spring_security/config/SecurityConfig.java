@@ -36,7 +36,7 @@ public class SecurityConfig {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService);
 //        authenticationProvider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());  FOR THE PLAIN TEXT AS IT IS MENTION IN THE PASSWORD SECTION
-        authenticationProvider.setPasswordEncoder(new BCryptPasswordEncoder(12));
+        authenticationProvider.setPasswordEncoder(new BCryptPasswordEncoder(-------));
 
         return authenticationProvider;
     }
@@ -87,17 +87,17 @@ public class SecurityConfig {
 //      public UserDetailsService userDetailsService() {
 //          UserDetails user = User
 //                  .withDefaultPasswordEncoder()
-//                  .username("ankit")
-//                  .password("1234")
-//                  .roles("USER")
+//                  .username(-------)
+//                  .password(------)
+//                  .roles(--------)
 //                  .build();
 //          UserDetails admin = User
 //                  .withDefaultPasswordEncoder()
-//                  .username("aman")
-//                  .password("1234")
-//                  .roles("ADMIN")
+//                  .username(---)
+//                  .password(----)
+//                  .roles(-----)
 //                  .build();
-//          return new InMemoryUserDetailsManager(user, admin);
+//          return new InMemoryUserDetailsManager(-----, ----);
 //      }
 
 }

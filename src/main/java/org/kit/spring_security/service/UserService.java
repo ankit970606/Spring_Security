@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
     @Autowired
     private UserRepo repo;
-    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(12);
+    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(-----);
 
 
 
